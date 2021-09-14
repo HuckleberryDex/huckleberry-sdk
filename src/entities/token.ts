@@ -64,22 +64,6 @@ export const WETH = {
     'WMOVR',
     'Wrapped WanCoin'
   ),
-  [ChainId.ROPSTEN]: new Token(
-    ChainId.ROPSTEN,
-    '0x916283cc60fdaf05069796466af164876e35d21f',
-    18,
-    'WMOVR',
-    'Wrapped WanCoin'
-  ),
-  [ChainId.RINKEBY]: new Token(
-    ChainId.RINKEBY,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WMOVR', 'Wrapped Ether'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WMOVR', 'Wrapped Ether'),
   [ChainId.MOON_MAINNET]: new Token(ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'),
   [ChainId.MOON_TESTNET]: new Token(ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WMOVR', 'Wrapped MOVR')
 }

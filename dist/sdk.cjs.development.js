@@ -21,10 +21,6 @@ var _SOLIDITY_TYPE_MAXIMA;
 
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 1] = "MAINNET";
-  ChainId[ChainId["ROPSTEN"] = 3] = "ROPSTEN";
-  ChainId[ChainId["RINKEBY"] = 4] = "RINKEBY";
-  ChainId[ChainId["G\xD6RLI"] = 5] = "G\xD6RLI";
-  ChainId[ChainId["KOVAN"] = 42] = "KOVAN";
   ChainId[ChainId["MOON_MAINNET"] = 1285] = "MOON_MAINNET";
   ChainId[ChainId["MOON_TESTNET"] = 1287] = "MOON_TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
@@ -440,7 +436,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xdabd997ae5e4799be47d6e69d9431615cba28f48', 18, 'WMOVR', 'Wrapped WanCoin'), _WETH[exports.ChainId.ROPSTEN] = /*#__PURE__*/new Token(exports.ChainId.ROPSTEN, '0x916283cc60fdaf05069796466af164876e35d21f', 18, 'WMOVR', 'Wrapped WanCoin'), _WETH[exports.ChainId.RINKEBY] = /*#__PURE__*/new Token(exports.ChainId.RINKEBY, '0xc778417E063141139Fce010982780140Aa0cD5Ab', 18, 'WETH', 'Wrapped Ether'), _WETH[exports.ChainId.GÖRLI] = /*#__PURE__*/new Token(exports.ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WMOVR', 'Wrapped Ether'), _WETH[exports.ChainId.KOVAN] = /*#__PURE__*/new Token(exports.ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WMOVR', 'Wrapped Ether'), _WETH[exports.ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WMOVR', 'Wrapped MOVR'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xdabd997ae5e4799be47d6e69d9431615cba28f48', 18, 'WMOVR', 'Wrapped WanCoin'), _WETH[exports.ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WMOVR', 'Wrapped MOVR'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
@@ -763,7 +759,7 @@ var Pair = /*#__PURE__*/function () {
   function Pair(tokenAmountA, tokenAmountB) {
     var tokenAmounts = tokenAmountA.token.sortsBefore(tokenAmountB.token) // does safety checks
     ? [tokenAmountA, tokenAmountB] : [tokenAmountB, tokenAmountA];
-    this.liquidityToken = new Token(tokenAmounts[0].token.chainId, Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token), 18, 'BDSLP', 'BDSLP');
+    this.liquidityToken = new Token(tokenAmounts[0].token.chainId, Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token), 18, 'HUCKLP', 'HUCKLP');
     this.tokenAmounts = tokenAmounts;
   }
 
