@@ -436,7 +436,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xdabd997ae5e4799be47d6e69d9431615cba28f48', 18, 'WMOVR', 'Wrapped WanCoin'), _WETH[exports.ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WMOVR', 'Wrapped MOVR'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xdabD997aE5E4799BE47d6E69D9431615CBa28f48', 18, 'WMOVR', 'Wrapped WanCoin'), _WETH[exports.ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WMOVR', 'Wrapped MOVR'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
