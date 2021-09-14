@@ -65,5 +65,5 @@ export const WETH = {
     'Wrapped MOVR'
   ),
   [ChainId.MOON_MAINNET]: new Token(ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'),
-  [ChainId.MOON_TESTNET]: new Token(ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WDEV', 'Wrapped MDEV')
+  [ChainId.MOON_TESTNET]: new Token(ChainId.MOON_TESTNET, '0x372d0695E75563D9180F8CE31c9924D7e8aaac47', 18, 'WDEV', 'Wrapped MDEV')
 }
