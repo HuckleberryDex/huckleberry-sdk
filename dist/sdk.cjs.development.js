@@ -36,7 +36,7 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0x17baf8f938bd81328e9f1730a29fb4d09dff8f49';
+var FACTORY_ADDRESS = '0x0d01A76691ba4C0c1143CabCF15ea605Bf0d7fB8';
 var INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -436,7 +436,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xdabD997aE5E4799BE47d6E69D9431615CBa28f48', 18, 'WMOVR', 'Wrapped WanCoin'), _WETH[exports.ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_TESTNET, '0xbd23fCD60bD2682dea6A3aad84b498c54d56c494', 18, 'WMOVR', 'Wrapped MOVR'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[exports.ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(exports.ChainId.MOON_TESTNET, '0x372d0695E75563D9180F8CE31c9924D7e8aaac47', 18, 'WDEV', 'Wrapped MDEV'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
