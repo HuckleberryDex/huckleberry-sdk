@@ -17,6 +17,7 @@ var ChainId;
 
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 1] = "MAINNET";
+  ChainId[ChainId["CLOVER_PARACHAIN"] = 1024] = "CLOVER_PARACHAIN";
   ChainId[ChainId["MOON_MAINNET"] = 1285] = "MOON_MAINNET";
   ChainId[ChainId["MOON_TESTNET"] = 1287] = "MOON_TESTNET";
 })(ChainId || (ChainId = {}));
@@ -36,7 +37,7 @@ var Rounding;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(Rounding || (Rounding = {}));
 
-var FACTORY_ADDRESS = '0x017603C8f29F7f6394737628a93c57ffBA1b7256';
+var FACTORY_ADDRESS = '0x1f4b7660b6AdC3943b5038e3426B33c1c0e343E6';
 var INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -436,7 +437,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(ChainId.MOON_TESTNET, '0x372d0695E75563D9180F8CE31c9924D7e8aaac47', 18, 'WDEV', 'Wrapped MDEV'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[ChainId.CLOVER_PARACHAIN] = /*#__PURE__*/new Token(ChainId.CLOVER_PARACHAIN, '0x6d6AD95425FcF315c39Fa6F3226471d4f16F27B3', 18, 'WCLV', 'Wrapped CLV'), _WETH[ChainId.MOON_MAINNET] = /*#__PURE__*/new Token(ChainId.MOON_MAINNET, '0x98878B06940aE243284CA214f92Bb71a2b032B8A', 18, 'WMOVR', 'Wrapped MOVR'), _WETH[ChainId.MOON_TESTNET] = /*#__PURE__*/new Token(ChainId.MOON_TESTNET, '0x372d0695E75563D9180F8CE31c9924D7e8aaac47', 18, 'WDEV', 'Wrapped MDEV'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
