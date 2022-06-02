@@ -371,7 +371,7 @@ function Currency(decimals, symbol, name) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'MOVR', 'MOVR');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'CLV', 'CLV');
 var ETHER = Currency.ETHER;
 
 var _WETH;
